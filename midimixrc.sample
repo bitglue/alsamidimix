@@ -1,0 +1,16 @@
+# This is a sample configuration file. Copy it to ~/.midimixrc to have it read
+# by default.
+#
+# This configuration file is actually a Python script, so if you know Python
+# you can have it do interesting things. If you don't know Python, it should
+# be simple enough to copy these examples. Since this is essentially an
+# executable file, don't install a .midimixrc from someone you don't trust.
+
+#            name,           cc,  chan
+bindPlayback('Master',       0,   16)
+bindPlayback('PCM',          1,   16)
+bindPlayback('Analog Mix',   2,   16)
+bindPlayback('Line',         3,   16)
+bindPlayback('Mic',          4,   16)
+
+# vim: syn=python
