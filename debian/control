@@ -1,0 +1,19 @@
+Source: alsamidimix
+Section: sound
+Priority: extra
+Maintainer: Phil Frost <indigo@bitglue.com>
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.6.5), python-pyrex, libasound2-dev
+Standards-Version: 3.9.3
+Homepage: https://github.com/bitglue/alsamidimix
+Vcs-Git: git://github.com/bitglue/alsamidimix.git
+Vcs-Browser: https://github.com/bitglue/alsamidimix
+
+Package: alsamidimix
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Description: Control the ALSA mixer with MIDI
+ alsamidimix allows the control of the ALSA mixer with MIDI messages. Bindings
+ are configured through a configuration file and a daemon listens for MIDI
+ messages, adjusting the mixer. The daemon will also watch for changes to the
+ mixer and send MIDI messages as feedback for MIDI devices which can update
+ their state through LEDs or motorized faders.
